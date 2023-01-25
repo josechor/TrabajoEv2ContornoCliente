@@ -146,7 +146,7 @@ class ProductosModel extends \Com\Daw2\Core\BaseModel {
         return $mensaje;
     }
 
-    function buscaDinamica($filtros) {
+    function buscaDinamica($filtros, int $n) {
         $conditions = [];
         $parameters = [];
 
@@ -182,4 +182,5 @@ class ProductosModel extends \Com\Daw2\Core\BaseModel {
         return $stmt->fetchAll();
     }
 
+    
 }
